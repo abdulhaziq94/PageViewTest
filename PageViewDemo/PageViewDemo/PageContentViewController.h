@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "RepoObject.h"
 #import "RepoListCell.h"
+#import "CommitTableViewController.h"
+#import "CommitObject.h"
+#import "CommitCell.h"
 
 @interface PageContentViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

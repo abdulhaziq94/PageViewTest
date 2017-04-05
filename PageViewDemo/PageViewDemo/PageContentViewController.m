@@ -22,7 +22,8 @@
     // Do any additional setup after loading the view.
     
     self.titleLabel.text = self.titleText;
-    
+
+   
     long i = self.pageIndex;
     
     NSURL *RepoListURL = [NSURL URLWithString:JsonURL[i]];
@@ -36,7 +37,8 @@
     for (NSDictionary *RepoListDict in RepoListJson) {
         RepoObject *repoObj = [[RepoObject alloc] init];
         repoObj.Repo_url = [RepoListDict objectForKey:@"name"];
-
+        repoObj.Commit_url = [RepoListDict objectForKey:@"commits_url"];
+        
         [self.RepoListArray addObject:repoObj];
 //        NSLog(@"ddsadafdsfdsfdsfsdsdfsdfsdfs: %@",repoObj.Repo_url);
     }
@@ -73,14 +75,22 @@
    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showCommitDetails"]) {
+        NSIndexPath *indexPath = [self.RepotableView indexPathForSelectedRow];
+        CommitTableViewController  *commitDetailsViewController = segue.destinationViewController;
+        
+        RepoObject *repoObj = [self.RepoListArray objectAtIndex:indexPath.row];
+        
+        commitDetailsViewController.NextRepoObject = repoObj;
+    }
 }
-*/
+
+
+
+
+
+
 
 @end

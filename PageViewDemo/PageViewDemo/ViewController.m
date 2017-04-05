@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.pageTitle = @[@"Page 1", @"Page 2", @"Page 3", @"Page 4"];
-    self.pageJsonURL = @[@"https://api.github.com/orgs/spring-projects/repos",@"https://api.github.com/orgs/spring-projects/repos?page=2", @"https://api.github.com/orgs/spring-projects/repos?page=3", @"https://api.github.com/orgs/spring-projects/repos?page=4"];
+    self.pageTitle = @[@"Page 1", @"Page 2", @"Page 3", @"Page 4", @"Page 5", @"Page 6", @"Page 7"];
+    self.pageJsonURL = @[@"https://api.github.com/orgs/spring-projects/repos",@"https://api.github.com/orgs/spring-projects/repos?page=2", @"https://api.github.com/orgs/spring-projects/repos?page=3", @"https://api.github.com/orgs/spring-projects/repos?page=4", @"https://api.github.com/orgs/spring-projects/repos?page=5", @"https://api.github.com/orgs/spring-projects/repos?page=6", @"https://api.github.com/orgs/spring-projects/repos?page=7"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -69,7 +69,7 @@
     pageContentViewController.titleText = self.pageTitle[index];
     pageContentViewController.pageIndex = index;
     pageContentViewController.JsonURL   = self.pageJsonURL;
-    
+   
     return pageContentViewController;
 }
 

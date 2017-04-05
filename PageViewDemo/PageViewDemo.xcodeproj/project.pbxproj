@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AA8FEB11E94A83700772B4B /* CommitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8FEB01E94A83700772B4B /* CommitTableViewController.m */; };
+		5AA8FEB41E94AA9F00772B4B /* CommitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8FEB31E94AA9F00772B4B /* CommitCell.m */; };
+		5AA8FEB71E94AABC00772B4B /* CommitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8FEB61E94AABC00772B4B /* CommitObject.m */; };
 		5ABEB9CF1E93276800245F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABEB9CE1E93276800245F83 /* main.m */; };
 		5ABEB9D21E93276800245F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABEB9D11E93276800245F83 /* AppDelegate.m */; };
 		5ABEB9D51E93276800245F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABEB9D41E93276800245F83 /* ViewController.m */; };
@@ -38,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AA8FEAF1E94A83700772B4B /* CommitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitTableViewController.h; sourceTree = "<group>"; };
+		5AA8FEB01E94A83700772B4B /* CommitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitTableViewController.m; sourceTree = "<group>"; };
+		5AA8FEB21E94AA9F00772B4B /* CommitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitCell.h; sourceTree = "<group>"; };
+		5AA8FEB31E94AA9F00772B4B /* CommitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitCell.m; sourceTree = "<group>"; };
+		5AA8FEB51E94AABC00772B4B /* CommitObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitObject.h; sourceTree = "<group>"; };
+		5AA8FEB61E94AABC00772B4B /* CommitObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitObject.m; sourceTree = "<group>"; };
 		5ABEB9CA1E93276800245F83 /* PageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABEB9CE1E93276800245F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ABEB9D01E93276800245F83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +128,12 @@
 				5ABEBA071E9388D200245F83 /* RepoObject.h */,
 				5ABEBA081E9388D200245F83 /* RepoObject.m */,
 				5ABEB9D61E93276800245F83 /* Main.storyboard */,
+				5AA8FEB21E94AA9F00772B4B /* CommitCell.h */,
+				5AA8FEB31E94AA9F00772B4B /* CommitCell.m */,
+				5AA8FEB51E94AABC00772B4B /* CommitObject.h */,
+				5AA8FEB61E94AABC00772B4B /* CommitObject.m */,
+				5AA8FEAF1E94A83700772B4B /* CommitTableViewController.h */,
+				5AA8FEB01E94A83700772B4B /* CommitTableViewController.m */,
 				5ABEBA041E9386C600245F83 /* RepoListCell.h */,
 				5ABEBA051E9386C600245F83 /* RepoListCell.m */,
 				5ABEB9D91E93276800245F83 /* Assets.xcassets */,
@@ -288,6 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA8FEB71E94AABC00772B4B /* CommitObject.m in Sources */,
+				5AA8FEB41E94AA9F00772B4B /* CommitCell.m in Sources */,
+				5AA8FEB11E94A83700772B4B /* CommitTableViewController.m in Sources */,
 				5ABEBA091E9388D200245F83 /* RepoObject.m in Sources */,
 				5ABEB9D51E93276800245F83 /* ViewController.m in Sources */,
 				5ABEBA021E932CD900245F83 /* PageContentViewController.m in Sources */,
