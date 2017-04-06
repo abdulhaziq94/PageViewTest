@@ -16,5 +16,6 @@
 @synthesize date;
 @synthesize commitNo;
 @synthesize totalCommit;
+@synthesize errorMessage;
 
 @end

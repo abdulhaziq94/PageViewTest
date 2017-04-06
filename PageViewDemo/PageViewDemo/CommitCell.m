@@ -15,6 +15,7 @@
 @synthesize DateLabel;
 @synthesize CommitNoLabel;
 @synthesize TotalCommitLabel;
+@synthesize ErrorMsglabel;
 
 
 - (void)awakeFromNib {

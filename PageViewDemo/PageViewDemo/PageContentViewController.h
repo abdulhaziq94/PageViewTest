@@ -13,6 +13,7 @@
 #import "CommitTableViewController.h"
 #import "CommitObject.h"
 #import "CommitCell.h"
+#import "AlertViewController.h"
 
 @interface PageContentViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 

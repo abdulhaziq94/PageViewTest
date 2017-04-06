@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *DateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *CommitNoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *TotalCommitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *ErrorMsglabel;
 
 @end

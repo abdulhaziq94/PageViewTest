@@ -42,6 +42,7 @@
         [self.RepoListArray addObject:repoObj];
 //        NSLog(@"ddsadafdsfdsfdsfsdsdfsdfsdfs: %@",repoObj.Repo_url);
     }
+
     
     self.RepotableView.dataSource = self;
 }
@@ -69,8 +70,10 @@
     RepoObject *repoObj = [self.RepoListArray objectAtIndex:indexPath.row];
     cell.RepoNameLabel.text = repoObj.Repo_url;
     //    cell.textLabel.text = [self.RepoListArray objectAtIndex:indexPath.row];
-  
     return cell;
+    
+  
+    
     
    
 }
@@ -84,7 +87,15 @@
         RepoObject *repoObj = [self.RepoListArray objectAtIndex:indexPath.row];
         
         commitDetailsViewController.NextRepoObject = repoObj;
+        
+        
+        
+        
+    }else if ([segue.identifier isEqualToString:@"errorIdentifier"]){
+        
     }
+    
+    
 }
 
 

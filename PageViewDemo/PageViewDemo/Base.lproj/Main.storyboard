@@ -109,16 +109,16 @@
         <scene sceneID="Ufp-nh-pGe">
             <objects>
                 <tableViewController title="Commit Details" id="lik-xG-Iz4" customClass="CommitTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="257" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Nu-6F-Y1a">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="250" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Nu-6F-Y1a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitCell" rowHeight="257" id="cSf-de-NAx" customClass="CommitCell">
-                                <rect key="frame" x="0.0" y="56" width="320" height="257"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitCell" rowHeight="250" id="cSf-de-NAx" customClass="CommitCell">
+                                <rect key="frame" x="0.0" y="56" width="320" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cSf-de-NAx" id="f8x-eU-1WQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Commit Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPY-Ks-542">
@@ -186,7 +186,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TotalCommit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tko-G6-idQ">
-                                            <rect key="frame" x="183" y="214" width="118" height="21"/>
+                                            <rect key="frame" x="177" y="214" width="135" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -212,7 +212,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcb-Ag-HPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777.5" y="0.0"/>
+            <point key="canvasLocation" x="1807.5" y="-221.83098591549296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IvO-Ge-pKf">

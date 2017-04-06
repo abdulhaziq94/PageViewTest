@@ -25,20 +25,32 @@
     NSURL *commitURL = [NSURL URLWithString:NewCommit_url];
     NSData *jsonData = [NSData dataWithContentsOfURL:commitURL];
     NSError *error = nil;
+    self.CommitDetailArray = [[NSMutableArray alloc]init];
+
+    if (jsonData != nil) {
+  
     id SpringBootJson = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
     
-    self.CommitDetailArray = [[NSMutableArray alloc]init];
     
-    for (NSDictionary *CommitDictionary in SpringBootJson) {
-        CommitObject *committer = [[CommitObject alloc] init];
-        committer.commitMessage = [CommitDictionary valueForKeyPath:@"commit.message"];
-        committer.name =[CommitDictionary valueForKeyPath:@"commit.committer.name"];
-        committer.email = [CommitDictionary valueForKeyPath:@"commit.committer.email"];
-        committer.date = [CommitDictionary valueForKeyPath:@"commit.committer.date"];
+    
+        for (NSDictionary *CommitDictionary in SpringBootJson) {
+            CommitObject *committer = [[CommitObject alloc] init];
+            committer.commitMessage = [CommitDictionary valueForKeyPath:@"commit.message"];
+            committer.name =[CommitDictionary valueForKeyPath:@"commit.committer.name"];
+            committer.email = [CommitDictionary valueForKeyPath:@"commit.committer.email"];
+            committer.date = [CommitDictionary valueForKeyPath:@"commit.committer.date"];
+            committer.errorMessage = [CommitDictionary valueForKey:@"message"];
+            [self.CommitDetailArray addObject:committer];
+        }
+    
+    } else if (jsonData == nil){
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error!" message:@"This Git repository is empty" preferredStyle:UIAlertControllerStyleAlert];
         
-        [self.CommitDetailArray addObject:committer];
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:ok];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
     }
-
     
 }
 
@@ -78,10 +90,9 @@
     committer.commitNo = commitNo;
     cell.CommitNoLabel.text = committer.commitNo;
     
-    
-    
-    
     return cell;
+    
+    
 }
 
 /*

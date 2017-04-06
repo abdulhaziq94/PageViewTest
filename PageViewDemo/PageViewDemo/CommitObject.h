@@ -16,5 +16,5 @@
 @property (nonatomic,strong) NSString *date;
 @property (nonatomic,strong) NSString *commitNo;
 @property (nonatomic,strong) NSString *totalCommit;
-
+@property (nonatomic,strong) NSString *errorMessage;
 @end
