@@ -10,6 +10,7 @@
 #import "CommitCell.h"
 #import "CommitObject.h"
 #import "RepoObject.h"
+#import "PageContentViewController.h"
 
 
 @interface CommitTableViewController : UITableViewController

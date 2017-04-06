@@ -46,12 +46,14 @@
     } else if (jsonData == nil){
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error!" message:@"This Git repository is empty" preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-        [alertController addAction:ok];
+        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+            
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
         
+        [alertController addAction:ok];
         [self presentViewController:alertController animated:YES completion:nil];
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -134,8 +136,11 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showRepoList"]) {
+        
+        
+    }
+
 }
 */
 
