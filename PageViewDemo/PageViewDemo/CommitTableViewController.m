@@ -27,6 +27,7 @@
     NSError *error = nil;
     self.CommitDetailArray = [[NSMutableArray alloc]init];
 
+    //condition for checking data is nil or not
     if (jsonData != nil) {
   
     id SpringBootJson = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
@@ -39,16 +40,17 @@
             committer.name =[CommitDictionary valueForKeyPath:@"commit.committer.name"];
             committer.email = [CommitDictionary valueForKeyPath:@"commit.committer.email"];
             committer.date = [CommitDictionary valueForKeyPath:@"commit.committer.date"];
-            committer.errorMessage = [CommitDictionary valueForKey:@"message"];
+         
             [self.CommitDetailArray addObject:committer];
         }
     
     } else if (jsonData == nil){
+        
+        //popup alert message
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error!" message:@"This Git repository is empty" preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
-            
-            [self.navigationController popViewControllerAnimated:YES];
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action){
+            [self.navigationController popViewControllerAnimated:YES]; //back to the previous view
         }];
         
         [alertController addAction:ok];

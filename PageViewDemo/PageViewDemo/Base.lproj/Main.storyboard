@@ -210,13 +210,10 @@
                             <outlet property="delegate" destination="lik-xG-Iz4" id="FWb-et-eic"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="xqX-fo-fwD" kind="show" identifier="showRepoList" id="ajb-PC-3f6"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcb-Ag-HPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146.875" y="-98.239436619718305"/>
+            <point key="canvasLocation" x="1869" y="-206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IvO-Ge-pKf">

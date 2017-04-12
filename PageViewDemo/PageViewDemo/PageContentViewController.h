@@ -18,7 +18,7 @@
 @interface PageContentViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property NSUInteger pageIndex;
+@property NSUInteger pageIndex; //stores current page index
 @property NSString *titleText;
 @property (weak, nonatomic) IBOutlet UITableView *RepotableView;
 @property NSMutableArray *RepoListArray;

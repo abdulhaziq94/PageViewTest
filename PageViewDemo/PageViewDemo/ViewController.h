@@ -12,10 +12,10 @@
 #import "RepoListCell.h"
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
-
+//implement data source protocol to tell page view controller what to display for each page.
 - (IBAction)BackToFirstPage:(id)sender;
 @property (strong,nonatomic) UIPageViewController *pageViewController;
-@property (strong,nonatomic) NSArray *pageTitle;
+@property (strong,nonatomic) NSArray *pageTitle; //provide data for the page content.
 @property (strong,nonatomic) NSArray *pageJsonURL;
 
 
